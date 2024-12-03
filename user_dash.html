@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html id="UD">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>User Dashboard - CountOnMe</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400..900;1,400..900&family=Source+Sans+3:ital,wght@0,200..900;1,200..900&family=Source+Serif+4:ital,opsz,wght@0,8..60,200..900;1,8..60,200..900&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <h1>Welcome Back! We've Been Counting the Minutes...</h1>
+        <!-- This code was created with the assistance of Microsoft Copilot.
+        Reference: Microsoft Copilot response on December 1, 2024 -->
+    </header>
+    <form id="createTimerForm" action="/create_timer" method="POST">
+        <label for="timerName">Timer Name:</label>
+        <input type="text" id="timerName" name="timerName" required><br><br>
+        <label for="timerDate">Timer Date and Time:</label>
+        <input type="datetime-local" id="timerDate" name="timerDate" required><br><br>
+        <button type="submit">Create Timer</button>
+    </form>    
+    <div id="timers">
+        <!-- Timers will be dynamically loaded here -->
+    </div>
+    <script src="script.js"></script>
+    <!-- This code was created with the assistance of Microsoft Copilot.
+    Reference: Microsoft Copilot response on December 1, 2024 -->
+</body>
+<br>
+<nav id="site_navi">
+    <a href="contact.html">Contact Us</a> 
+    </nav>
+</html>
